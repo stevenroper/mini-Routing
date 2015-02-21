@@ -11,11 +11,11 @@ app.config(function($routeProvider) {
 		controller: 'settingsCtrl'
 	})
 	.when('/products/:id', {
-		templateUrl: '/js/products/productsTmpl.html',
+		templateUrl: '/js/products/productTmpl.html',
 		controller: 'productsCtrl'
 	})
 	.otherwise({
-		templateUrl: '/js/home/homeTmpl.html',
-		controller: 'homeCtrl'
+		redirectTo: '/'
 	});
+
 });
